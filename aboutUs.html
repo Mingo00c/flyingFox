@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣狐蝠保育網</title>
+    <meta name="description" content="台灣狐蝠保育網的成立團體">
+    <meta name="keywords" content="保育,團體,狐蝠,生態,教育">
+    <!-- icons -->
+    <link rel="icon" href="./logo6_Gemini.png">
+    <link rel="icon" sizes="192x192" href="./logo6_Gemini.png">
+    <link rel="apple-touch-icon" href="./logo6_Gemini.png">
+    <style>
+        body {
+            background: #F7F4EC;
+        }
+        .header{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: center top;
+            background-color: #fff;
+            z-index: 1;
+        }
+        .partOne {
+            width: 100%;
+            height: 603px;
+            background-image: url("img/aboutUs/banner.png");
+            background-repeat: no-repeat;
+            background-size: Cover;
+            opacity: 60%;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .partOne p{
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+            font-size: 300%;
+            line-height: 30px;
+            /* font-family: 'Limelight', cursive; */
+        }
+        .cloud{
+            width: 90%;
+            height: 90px;
+            background-color: #fff;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .cloud ul{
+            width: 127px;
+            height: 44px;
+            background-color: #6B8EAE;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            text-align: center;
+            
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: auto;
+            padding-right: auto;
+            box-sizing: border-box;
+
+        }
+        table{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .col{
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .col button{
+            width: 157px;
+            height: 60px;
+            background-color: #6B8EAE;
+            border: #fff solid 3px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .card{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            padding-bottom: 30px;
+            background-color: #F5F1E4;
+            border: #F5A623 solid 3px;
+            border-radius: 15px;
+        }
+        .card3{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            background-color: #F5A623;
+            border: #fff solid 3px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .card3 h5{
+            font-size: 24px;
+        }
+        tr td img{
+            width: 480px;
+            height: auto;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        h1 a{
+            text-decoration:none;
+            color: #fff;
+        }
+        h1 a:hover{
+            text-decoration:none
+        }
+        .nav ul {
+            margin-right: 10px; 
+        }
+        .header img{
+            width: 130px;
+         }
+         .entryBtns{
+            color: #F5A623 ;
+            text-align: center;
+            text-decoration:none
+         }
+         .sec3{
+            background: rgba(76,116,93,23%);
+            height: auto;
+            width: cover;
+            padding:10px;
+            margin:30px auto;
+            text-align: left;
+            box-sizing: border-box;
+            display: block;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec3 td{
+            height: 30%;
+            padding:10px;
+            margin:30px auto;
+            box-sizing: border-box;
+         }
+         .sec3 td tr{
+            width: 45%;
+         }
+         footer{
+            height: auto;
+            width: cover;
+            padding: 10%;
+            background-color: #6B8EAE;
+
+         }
+         /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        #pagetop{
+            margin:0;
+            margin-left: 262px;
+            position:fixed;
+            left: 50%;
+            bottom: 42px;
+            }
+
+        #pagetop a{
+            display:inline-block;
+            padding:10px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            }
+    </style>
+</head>
+<body><center>
+    <nav class="header">
+        <ul><a href="index.html"><img src="./logo6.png"></a></ul>
+        <ul><a href="news.html">救傷小故事</a></ul>
+        <ul><a href="News.html">志工活動</a></ul>
+        <ul><a href="donate.html">歷史沿革</a></ul>
+        <ul><a href="rescue2.html">救傷包</a></ul>
+        <ul><a href="SUPPORT.html">店家捐款箱</a></ul>
+        <ul><input type="text" name="search" placeholder="全站搜索" required></ul>
+        <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+    </nav>
+    <section class="partOne">
+        <ul class="container">
+            <li><p>人本自然 平衡生態</p></li>
+            <li><h1>關於我們</h1></li>
+        </ul>
+    </section>
+    <nav class="cloud">
+        <ul><a href="news.html">最新活動</a></ul>
+        <ul><a href="aboutUs.html">關於我們</a></ul>
+        <ul><a href="aboutAnimal.html">關於狐蝠</a></ul>
+        <ul><a href="rescue.html">如何救傷</a></ul>
+        <ul><a href="donate.html">徵信公開</a></ul>
+        <ul><a href="donate.html">我要捐款</a></ul>
+        <ul><a href="SUPPORT.html">支持/加入</a></ul>
+    </nav>
+    <section>
+        <div>
+            <table>
+                    <tr style="position: relative; width: 90%;">
+                        <td>
+                            <img src="img/aboutUs/aboutUs.jpg" alt="aboutUs">
+                        </td>
+                        <td>
+                            <img src="img/aboutUs/aboutAnimal.jpg" alt="aboutCase">
+                        </td>
+                        <td>
+                            <img src="img/aboutUs/abouFlyingFox.jpg" alt="abouFlyingFox">
+                        </td>
+                    </tr>
+            </table>
+        </div>
+        <div class="col">
+            <div class="card">
+                <p>我們是研究者、獸醫、教育工作者與生態志工，看見了這份生態上的急迫性與缺口，於是共同成立保育平台。</p>
+            </div>
+            <div class="card">
+                <p>台灣狐蝠作為台灣生物圈中不可或缺的一份子，應與環境、人類 三者健康為一體。</p>
+            </div>
+            <div class="card">
+                <p>肩負著在熱帶森林播種的重任。然而，隨著⼈為破壞與氣候變遷的衝擊，牠們早已成為瀕臨滅絕的物種，正發出無聲的求救訊號。</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card3">
+                <h5>動保,不是一個人做很多,<br>是每個人都做了一點</h5>
+                <p>我們堅信野生動物保育不只是特定組織的責任，而是需要參與者共同實踐。</p>
+                <button>緣起</button>
+            </div>
+            <div class="card3">
+                <h5>從蝠寶開始的族群永續</h5>
+                <p>我們期望透過科學實證的救傷和野放方法、透明公開的研究數據以及全民參與的教育推廣，成為台灣狐蝠保育工作的主要平台。</p>
+                <button>理念</button>
+            </div>
+            <div class="card3">
+                <h5>守護台灣空中的神秘精靈</h5>
+                <p>我們的目標是確保台灣狐蝠能在健康的環境中永續生存，並以「研究、救援、教育、推廣」四個面向為核心，打造資訊與行動整合平台，致力於傳遞狐蝠的存續權與生態價值給台灣。</p>
+                <button>願景</button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <h2>Formosan Flying Fox<br>Pteropus dasymallus formosus</h2>
+    <section class="sec3"><center>
+        <table>
+            <tr>
+                <td>
+                    <img src="./img/aboutUs/detail.jpg" style="width: 480px; height: auto;">
+                </td>
+                <td>
+                    <div style="width: 480px; height: auto;">
+                        <p>        依據「財團法人法」第 25 條規定，除捐贈者事先已書面表示反對外，本機構須主動公開捐贈者之姓名及捐款金額，為因應其規範，倘若您不希望公開捐款資訊，敬請下載<strong><a>公開資訊意願聲明書</a></strong>，填妥後拍照、掃描、傳真等各種方式回傳本會信箱：<a href="mailto:FormosanFlyingFox@taiwan.org">FormosanFlyingFox@taiwan.org</a>；若您未主動回覆，將視為同意公開個人捐款資訊以利徵信。<br>* 若您同時以數個名義捐款，須請填具個別聲明書<br>* 接受捐贈或支付清冊資料</p>
+                        <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;">歷史沿革</button>
+                    </div>
+                </td>
+            </tr>
+            </table>
+            <td><hr></td>
+            <td><img src="./img/aboutUs/Project.png" style="width: 100%; height: auto;"></td>
+            <td>
+                <video muted playsinline controls width=90% height="auto">
+                    <source src="./index.mp4" type="video/webm" />
+                </video>
+            </td></center>
+    </section>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>聯絡資訊</strong><br>服務時間: 09:00-18:00星期一~星期六<br>洽詢專線: 0905-139278<br>客服信箱: FormosanFlyingFox@taiwan.org</p>
+                    <img src="./logo6.png" alt="logo" style="width: 240px; height: auto;">
+                </td>
+                <td>
+                    <p><strong>社團法人臺灣狐蝠保育協會</strong><br>立案字號: 台内團字第10900167953號函<br>勸募許可文號: 衛部救字第1130376489號函<br>統一編號: 71137640<br>發票愛心碼: 9457</p>
+                    <p>訂閱電子報</p>
+                    <ul><input type="text" name="email" placeholder="電子郵件*" required></ul>
+                    <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+                    <p><strong>Formosan Flying Fox Conservation</strong></p>
+                </td>
+                <td>
+                    <video muted playsinline controls width="240" height="auto">
+                        <source src="./index.mp4" type="video/webm" />
+                    </video>
+                    <p><strong>瀏覽次數:  </strong></p><br>
+                    <a href=""><img src="./img/icon/envelope.svg" alt="envelope" style="width: 33px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/facebook.svg" alt="facebook" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/instagram.svg" alt="instagram" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/linkedin.svg" alt="linkedin" style="width: 30px; height: auto;"></a>      
+                    <a href=""><img src="./img/icon/phone-call.svg" alt="phone-call" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/play.svg" alt="play" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/threads.svg" alt="threads" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/tik-tok.svg" alt="tik-tok" style="width: 30px; height: auto;"></a> 
+                    <a href=""><img src="./img/icon/twitter.svg" alt="twitter" style="width: 30px; height: auto;"></a> 
+                </td>
+            </tr>
+        </table>
+        <p class="pagetop"><a href="#"><img src="./img/icon/arrow.svg" style="width: 30px; rotate: -90deg;"></a></p>
+    </footer>
+</center></body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣狐蝠保育網</title>
+    <meta name="description" content="台灣狐蝠保育網的成立團體">
+    <meta name="keywords" content="保育,團體,狐蝠,生態,教育">
+    <!-- icons -->
+    <link rel="icon" href="./logo6_Gemini.png">
+    <link rel="icon" sizes="192x192" href="./logo6_Gemini.png">
+    <link rel="apple-touch-icon" href="./logo6_Gemini.png">
+    <style>
+        body {
+            background-image: url(./img/index/index_bg.png);
+        }
+        .header{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: center top;
+            background-color: #fff;
+            z-index: 1;
+        }
+        .partOne {
+            width: 100%;
+            height: 603px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .partOne p,img{
+            
+            text-align: left;
+        }
+        h1 {
+            color: #F5A623;
+            font-size: 300%;
+            line-height: 60px;
+            text-align: left;
+            /* font-family: 'Limelight', cursive; */
+        }
+        .cloud{
+            width: 90%;
+            height: 90px;
+            background-color: #fff;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .cloud ul{
+            width: 127px;
+            height: 44px;
+            background-color: #6B8EAE;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            text-align: center;
+            
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: auto;
+            padding-right: auto;
+            box-sizing: border-box;
+
+        }
+        table{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .col{
+            position: relative;
+            width: cover;
+            height: auto;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card{
+            height: auto;
+            width: 20%;
+            margin: 10px;
+            padding: 15px;
+            padding-bottom: 30px;
+            border-radius: 9px;
+            border: #F5A623 solid 3px;  
+        }
+        .card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 9px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .card h4{
+            color: #B5947B;
+        }
+        .card3{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            
+        }
+        
+        tr td img{
+            width: 480px;
+            height: auto;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        h1 a{
+            text-decoration:none;
+            color: #fff;
+        }
+        h1 a:hover{
+            text-decoration:none
+        }
+        .nav ul {
+            margin-right: 10px; 
+        }
+        .header img{
+            width: 130px;
+         }
+         .entryBtns{
+            color: #F5A623 ;
+            text-align: center;
+            text-decoration:none
+         }
+        
+         .sec3{
+            background: rgba(76,116,93,23%);
+            height: auto;
+            width: cover;
+            padding:10px;
+            margin:30px auto;
+            text-align: left;
+            box-sizing: border-box;
+            display: block;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec3 td{
+            height: 30%;
+            padding:10px;
+            margin:30px auto;
+            box-sizing: border-box;
+         }
+         .sec3 td tr{
+            width: 45%;
+         }
+         footer{
+            height: auto;
+            width: cover;
+            padding: 10%;
+            background-color: #6B8EAE;
+
+         }
+         /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        #pagetop{
+            margin:0;
+            margin-left: 262px;
+            position:fixed;
+            left: 50%;
+            bottom: 42px;
+            }
+
+        #pagetop a{
+            display:inline-block;
+            padding:10px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            }
+            *{
+            margin: 0;
+            padding: 0;
+        }
+        .info2{
+            width: 300px;
+            height: 180px;
+            margin-top: 90px;
+            
+            position: relative ;
+            /* 定位 */
+            
+            
+        }
+        .info2 .title img{
+            background-color: #fff ;
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+            left: 60px;
+            position: relative;
+            top: calc((27px + 3ex) * -2);
+        }
+        
+      
+    </style>
+</head>
+<body><center>
+    <nav class="header">
+        <ul><a href="index.html"><img src="./logo6.png"></a></ul>
+        <ul><a href="news.html">救傷小故事</a></ul>
+        <ul><a href="News.html">志工活動</a></ul>
+        <ul><a href="donate.html">歷史沿革</a></ul>
+        <ul><a href="rescue2.html">救傷包</a></ul>
+        <ul><a href="SUPPORT.html">店家捐款箱</a></ul>
+        <ul><input type="text" name="search" placeholder="全站搜索" required></ul>
+        <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+    </nav>
+    <section class="partOne">
+        <img src="./img/index/banner.png" style="position: relative;margin-left: -90px;z-index: -1;">
+        <dl style="position: relative; margin-left: -30px;"> 
+            <dt><p style="color: #6AA74F;">人本自然 平衡生態</p></dt><br>
+            <dt><h1>台灣狐蝠<br>保育網 </h1></dt>
+            <dt><button style="background-color:#F2A8A5 ;text-align: center ;border: #fff solid 3px;width: 120px;height: 45px;border-radius: 15px;font-size: 16px;opacity: 100%;margin-bottom:30px;color:#fff;margin: 3px;">我要捐款</button>
+            <button style="background-color:#F2A8A5 ;text-align: center ;border: #fff solid 3px;width: 120px;height: 45px;border-radius: 15px;font-size: 16px;opacity: 100%;margin-bottom:30px;color:#fff;margin: 3px;">歴年執行計畫</button></dt>
+        </dl>
+    </section>
+    <nav class="cloud">
+        <ul><a href="news.html">最新活動</a></ul>
+        <ul><a href="aboutUs.html">關於我們</a></ul>
+        <ul><a href="aboutAnimal.html">關於狐蝠</a></ul>
+        <ul><a href="rescue.html">如何救傷</a></ul>
+        <ul><a href="donate.html">徵信公開</a></ul>
+        <ul><a href="donate.html">我要捐款</a></ul>
+        <ul><a href="SUPPORT.html">支持/加入</a></ul>
+    </nav>
+    <section>
+        <h2>如何救傷</h2><br>
+    <section>
+        <table style="margin: 30px;">
+            <tr>
+                <td>
+                    <div class="info2">
+                    <div class="title">
+                        <img src="./img/aboteRescue/1-inspect.png">
+                        <center style="position: relative;margin-top: -60px;"><button style="background-color:#F2A8A5 ;text-align: center ;border: #F5A623 solid 3px;width: 120px;height: 45px;border-radius: 15px;font-size: 16px;opacity: 100%;color:#;">觀察</button></center>
+                    </div>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/index/arrow2.png" style="width: 30px;">
+                    
+                </td>
+                <td>
+                    <div class="info2">
+                    <div class="title">
+                        <img src="./img/aboteRescue/2-takeCare.png">
+                        <center style="position: relative;margin-top: -60px;"><button style="background-color:#F2A8A5 ;text-align: center ;border: #F5A623 solid 3px;width: 120px;height: 45px;border-radius: 15px;font-size: 16px;opacity: 100%;color:#;">安置</button></center>
+                    </div>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/index/arrow2.png" style="width: 30px;">
+                </td>
+                <td>
+                    <div class="info2">
+                    <div class="title">
+                        <img src="./img/aboteRescue/3-call.png">
+                        <center style="position: relative;margin-top: -60px;"><button style="background-color:#F2A8A5 ;text-align: center ;border: #F5A623 solid 3px;width: 120px;height: 45px;border-radius: 15px;font-size: 16px;opacity: 100%;color:#;">通報</button></center>
+                    </div>
+                </div>
+                </td>
+            </tr>
+        </table>
+        <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;margin-bottom:30px">如何救傷</button>
+
+        <h2>關於我們</h2>
+        <div class="col">
+            <div class="card3">
+                <img src="./img/index/from_.png">
+            </div>
+            <div class="card3">
+                <img src="./img/index/thought_.png">
+            </div>
+            <div class="card3">
+                <img src="./img/index/view_.png">
+            </div>
+            <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;margin-bottom:30px">關於我們</button>
+        </div>
+    </section>
+    <section>
+        <h2>最新消息</h2>
+        
+        <div class="col">
+            <div class="card">
+                <img src="./img/index/volunteer.jpg">
+                <h4>志工活動</h4>
+            </div>
+            <div class="card">
+                <img src="./img/index/col2.png">
+                <h4>培育計畫</h4>
+            </div>
+            <div class="card">
+                <img src="./img/index/column3.jpg">
+                <h4>救傷故事</h4>
+            </div>
+            <div class="card">
+                <img src="./img/index/column4.jpg">
+                <h4>保育專欄</h4>         
+            </div>
+            <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;margin-bottom:30px">最新消息</button>
+        </div>
+    </section>
+        <table style="margin: 30px;">
+            <h2>捐款徵信</h2>
+            <tr>
+                <td>
+                        <img src="./img/index/donate_1.png" style="width: 90px;">
+                </td>
+                <td>
+                    <div style="width: 180px; height: 90px; background-color: #6B8EAE;border-radius: 15px;position: relative;margin-left: -45px;z-index: -1;margin-right: 10px;padding: 10px;padding-left: 50px;"><p >即刻救援，點亮夜空。<br>單筆捐款</p><button style="background-color:#F5A623;text-align: center ;width: 60px;height: 30px;border-radius: 30px;font-size: 15px;margin-bottom:10px;">Go</button></div>
+                </td>
+                <td>
+                        <img src="./img/index/donate_2.png" style="width: 90px;">
+                    
+                </td>
+                <td>
+                    <div style="width: 180px; height: 90px; background-color: #6B8EAE;border-radius: 15px;position: relative;margin-left: -45px;z-index: -1;margin-right: 10px;padding: 10px;padding-left: 50px;"><p >積沙成塔，永續築夢。<br>定期定額</p><button style="background-color:#F5A623;text-align: center ;width: 60px;height: 30px;border-radius: 30px;font-size: 15px;margin-bottom:10px;">Go</button></div>
+                </td>
+                <td>
+                    <img src="./img/index/donate_3.png" style="width: 90px;">
+                    
+                </td>
+                <td>
+                    <div style="width: 180px; height: 90px; background-color: #6B8EAE;border-radius: 15px;position: relative;margin-left: -45px;z-index: -1;margin-right: 10px;padding: 10px;padding-left: 50px;"><p >與愛同行，共創友好。<br>企業贊助</p><button style="background-color:#F5A623;text-align: center ;width: 60px;height: 30px;border-radius: 30px;font-size: 15px;margin-bottom:10px;">Go</button></div>
+                </td>
+            </tr>
+            
+        </table>
+                <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;margin-bottom:30px">捐款徵信</button>
+        
+        <table>
+            <h2>支持/加入我們</h2>
+            <tr>
+                <td>
+                    <div style="text-align: center;">
+                        <h4 >志工招募</h4>
+                        <img src="./img/index/volunteerActivity.png" style= " width: 150px;height: 150px;opacity: 75%;">
+                    </div>
+                </td>
+                <td>
+                    <div style="text-align: center;">
+                        <h4 >公益小舖</h4>
+                        <img src="./img/index/sticker2.png" style= " width: 150px;height: 150px;opacity: 75%;">
+                    </div>
+                    
+                </td>
+                <td>
+                    <div style="text-align: center;">
+                        <h4 >物資募集</h4>
+                        <img src="./img/index/things.jpg" style= " width: 150px;height: 150px;opacity: 75%;">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr style="margin: 30px;">
+                <td></td>
+                <td colspan="2">
+                    <div style="margin: 10px;">
+                    <p style="text-align: center;">
+                    <img src="./img/icon/arrow.svg" style="width: 30px; height: auto;rotate: -180deg;margin-right: 10px;">
+                    
+                    <img src="./img/icon/arrow.svg" style="width: 30px; height: auto;margin-left: 10px;">
+                    </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+                
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>聯絡資訊</strong><br>服務時間: 09:00-18:00星期一~星期六<br>洽詢專線: 0905-139278<br>客服信箱: FormosanFlyingFox@taiwan.org</p>
+                    <img src="./logo6.png" alt="logo" style="width: 240px; height: auto;">
+                </td>
+                <td>
+                    <p><strong>社團法人臺灣狐蝠保育協會</strong><br>立案字號: 台内團字第10900167953號函<br>勸募許可文號: 衛部救字第1130376489號函<br>統一編號: 71137640<br>發票愛心碼: 9457</p>
+                    <p>訂閱電子報</p>
+                    <ul><input type="text" name="email" placeholder="電子郵件*" required></ul>
+                    <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+                    <p><strong>Formosan Flying Fox Conservation</strong></p>
+                </td>
+                <td>
+                    <video muted playsinline controls width="240" height="auto">
+                        <source src="./index.mp4" type="video/webm" />
+                    </video>
+                    <p><strong>瀏覽次數:  </strong></p><br>
+                    <a href=""><img src="./img/icon/envelope.svg" alt="envelope" style="width: 33px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/facebook.svg" alt="facebook" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/instagram.svg" alt="instagram" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/linkedin.svg" alt="linkedin" style="width: 30px; height: auto;"></a>      
+                    <a href=""><img src="./img/icon/phone-call.svg" alt="phone-call" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/play.svg" alt="play" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/threads.svg" alt="threads" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/tik-tok.svg" alt="tik-tok" style="width: 30px; height: auto;"></a> 
+                    <a href=""><img src="./img/icon/twitter.svg" alt="twitter" style="width: 30px; height: auto;"></a> 
+                </td>
+            </tr>
+        </table>
+        <p class="pagetop"><a href="#"><img src="./img/icon/arrow.svg" style="width: 30px; rotate: -90deg;"></a></p>
+    </footer>
+</center></body>
+</html>

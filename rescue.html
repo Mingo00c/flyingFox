@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣狐蝠保育網</title>
+    <meta name="description" content="台灣狐蝠保育網的成立團體">
+    <meta name="keywords" content="保育,團體,狐蝠,生態,教育">
+    <!-- icons -->
+    <link rel="icon" href="./logo6_Gemini.png">
+    <link rel="icon" sizes="192x192" href="./logo6_Gemini.png">
+    <link rel="apple-touch-icon" href="./logo6_Gemini.png">
+    <style>
+        body {
+            background: #F7F4EC;
+        }
+        .header{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: center top;
+            background-color: #fff;
+            z-index: 1;
+        }
+        .partOne {
+            width: 100%;
+            height: 603px;
+            background-image: url("img/aboteRescue/banner.jpg");
+            background-repeat: no-repeat;
+            background-size: Cover;
+            background-position-y: -150px;
+            opacity: 60%;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .partOne p{
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+            font-size: 300%;
+            line-height: 30px;
+            /* font-family: 'Limelight', cursive; */
+        }
+        .cloud{
+            width: 90%;
+            height: 90px;
+            background-color: #fff;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .cloud ul{
+            width: 127px;
+            height: 44px;
+            background-color: #6B8EAE;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            text-align: center;
+            
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: auto;
+            padding-right: auto;
+            box-sizing: border-box;
+
+        }
+        table{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .col{
+            position: relative;
+            width: cover;
+            height: auto;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            padding-bottom: 30px;
+            
+        }
+        .card h4{
+            color: #6AA74F;
+        }
+        .card3{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            
+        }
+        
+        tr td img{
+            width: 480px;
+            height: auto;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        h1 a{
+            text-decoration:none;
+            color: #fff;
+        }
+        h1 a:hover{
+            text-decoration:none
+        }
+        .nav ul {
+            margin-right: 10px; 
+        }
+        .header img{
+            width: 130px;
+         }
+         .entryBtns{
+            color: #F5A623 ;
+            text-align: center;
+            text-decoration:none
+         }
+         h2 {
+            margin-top: 30px;
+         }
+         h4 {
+            margin-bottom: 30px;
+         }
+         .sec3{
+            background: rgba(76,116,93,23%);
+            height: auto;
+            width: cover;
+            padding:10px;
+            margin:30px auto;
+            text-align: left;
+            box-sizing: border-box;
+            display: block;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec3 td{
+            height: 30%;
+            padding:10px;
+            margin:30px auto;
+            box-sizing: border-box;
+         }
+         .sec3 td tr{
+            width: 45%;
+         }
+         footer{
+            height: auto;
+            width: cover;
+            padding: 10%;
+            background-color: #6B8EAE;
+
+         }
+         /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        #pagetop{
+            margin:0;
+            margin-left: 262px;
+            position:fixed;
+            left: 50%;
+            bottom: 42px;
+            }
+
+        #pagetop a{
+            display:inline-block;
+            padding:10px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            }
+            *{
+            margin: 0;
+            padding: 0;
+        }
+        .info2{
+            width: 300px;
+            height: 180px;
+            margin-top: 90px;
+            border: #F5A623 solid 3px;
+            background-color:rgba(242,168,165,33%);
+            border-radius: 12px;
+            position: relative ;
+            /* 定位 */
+            
+            
+        }
+        .info2 .title img{
+            background-color: #fff ;
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+            left: 60px;
+            position: relative;
+            top: calc((27px + 3ex) * -2);
+        }
+        .info2 .card-list{
+            display: block;
+            flex-wrap: wrap;
+        }
+        .card6{
+            width: 280px;
+            margin: 0 10px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: -90px;
+        }
+    </style>
+</head>
+<body><center>
+    <nav class="header">
+        <ul><a href="index.html"><img src="./logo6.png"></a></ul>
+        <ul><a href="news.html">救傷小故事</a></ul>
+        <ul><a href="News.html">志工活動</a></ul>
+        <ul><a href="donate.html">歷史沿革</a></ul>
+        <ul><a href="rescue2.html">救傷包</a></ul>
+        <ul><a href="SUPPORT.html">店家捐款箱</a></ul>
+        <ul><input type="text" name="search" placeholder="全站搜索" required></ul>
+        <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+    </nav>
+    <section class="partOne">
+        <ul class="container">
+            <li><p>How to Rescue</p></li><br>
+            <li><h1>如何救傷</h1></li>
+        </ul>
+    </section>
+    <nav class="cloud">
+        <ul><a href="news.html">最新活動</a></ul>
+        <ul><a href="aboutUs.html">關於我們</a></ul>
+        <ul><a href="aboutAnimal.html">關於狐蝠</a></ul>
+        <ul><a href="rescue.html">如何救傷</a></ul>
+        <ul><a href="donate.html">徵信公開</a></ul>
+        <ul><a href="donate.html">我要捐款</a></ul>
+        <ul><a href="SUPPORT.html">支持/加入</a></ul>
+    </nav>
+    <section>
+        <h2>救傷三步驟</h2><br>
+        <h3>1觀察 2安置 3通報</h3>
+
+        <table style="margin: 30px;">
+            <tr>
+            <td>
+                <div class="info2">
+                <div class="title">
+                    <img src="./img/aboteRescue/1-inspect.png">
+                    <div class="card-list">
+                        <div class="card6">
+                            <p><b>若有撿到蝙蝠的情形，可能是因為：受傷或生病甚至老了、幼蝠不慎掉落、被攻擊，很多時候是被貓、其他不明原因</b></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </td>
+            <td>
+                <img src="./img/icon/arrow.svg" style="width: 30px;">
+            </td>
+            <td>
+                <div class="info2">
+                <div class="title">
+                    <img src="./img/aboteRescue/2-takeCare.png">
+                    <div class="card-list">
+                        <div class="card6">
+                            <p><b>請不要用手直接去抓蝙蝠！安全守則請見下方示意圖：</b></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </td>
+            <td>
+                <img src="./img/icon/arrow.svg" style="width: 30px;">
+            </td>
+            <td>
+                <div class="info2">
+                <div class="title">
+                    <img src="./img/aboteRescue/3-call.png">
+                    <div class="card-list">
+                        <div class="card6">
+                            <p><b>通報後送單位救援狐蝠。全台可立即聯繫的人員如下：政府市民專線1999/1959 林保署專線 0800-000930</b></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <section>
+        <h2>安全守則</h2>
+        <h3>觀察</h3>
+        
+        <div class="col">
+            <div class="card">
+                <h4>協助野放</h4>
+                <p>如果蝙蝠經初步觀察後能夠野放，無論幼蝠或成蝠，都可以在傍晚時讓牠們回到大自然。</p>
+            </div>
+            <div class="card">
+                <h4>死亡蝙蝠</h4>
+                <p>如發現蝙蝠屍體，可以寄給我們做進一步研究，樣品必須是新鮮的。<br>請用塑膠袋或戴上手套將蝙蝠拾起，再將之置入封口袋/夾鍊袋中密封，用冷藏宅配寄給蝙蝠小組。</p>
+            </div>
+            <div class="card">
+                <h4>協助安置</h4>
+                <p>如果蝙蝠受傷或無法野放，則需要獸醫或專業人員進一步確認！</p>
+            </div>
+        </div>
+        <hr>
+        <h3>安置</h3>
+        <div class="col">
+            <div class="card3">
+                <img src="./img/aboteRescue/001.png">
+            </div>
+            <div class="card3" style="width: 60%;">
+                <img src="./img/aboteRescue/002.png">
+            </div>
+            <div class="card3">
+                <img src="./img/aboteRescue/003.png">
+            </div>
+            <div class="card3">
+                <img src="./img/aboteRescue/004.png">
+            </div>
+            <div class="card3">
+                <img src="./img/aboteRescue/005.png">
+            </div>
+            <div class="card3">
+                <img src="./img/aboteRescue/006.png">
+            </div>
+            <div class="card3">
+                <img src="./img/aboteRescue/007.png">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h3>通報</h3>
+        
+        <div class="col" style="text-align: left;">
+            <div class="card">
+                <h4>北部</h4>
+                <p>桃園鳥會附設非營利野生動物診所<br>03 369 5685<br>桃竹苗: 台灣狐蝠保育網-總部<br>0905-139278</p>
+            </div>
+            <div class="card">
+                <h4>中南部</h4>
+                <p>生多所-野生動物急救站 0492761331<br>台中市野生動物保育學會 04-24969309<br>野灣-屏東分部 08 723 5288<br>屏科大保育類野生動物收容中心 087740413</p>
+            </div>
+            <div class="card">
+                <h4>東部</h4>
+                <p>野灣野生動物保育協會<br>池上本院 089862368</p><br>
+                <h4>離島</h4>
+                <p>金門縣野生動物救援暨保育協會 082333587</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>聯絡資訊</strong><br>服務時間: 09:00-18:00星期一~星期六<br>洽詢專線: 0905-139278<br>客服信箱: FormosanFlyingFox@taiwan.org</p>
+                    <img src="./logo6.png" alt="logo" style="width: 240px; height: auto;">
+                </td>
+                <td>
+                    <p><strong>社團法人臺灣狐蝠保育協會</strong><br>立案字號: 台内團字第10900167953號函<br>勸募許可文號: 衛部救字第1130376489號函<br>統一編號: 71137640<br>發票愛心碼: 9457</p>
+                    <p>訂閱電子報</p>
+                    <ul><input type="text" name="email" placeholder="電子郵件*" required></ul>
+                    <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+                    <p><strong>Formosan Flying Fox Conservation</strong></p>
+                </td>
+                <td>
+                    <video muted playsinline controls width="240" height="auto">
+                        <source src="./index.mp4" type="video/webm" />
+                    </video>
+                    <p><strong>瀏覽次數:  </strong></p><br>
+                    <a href=""><img src="./img/icon/envelope.svg" alt="envelope" style="width: 33px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/facebook.svg" alt="facebook" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/instagram.svg" alt="instagram" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/linkedin.svg" alt="linkedin" style="width: 30px; height: auto;"></a>      
+                    <a href=""><img src="./img/icon/phone-call.svg" alt="phone-call" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/play.svg" alt="play" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/threads.svg" alt="threads" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/tik-tok.svg" alt="tik-tok" style="width: 30px; height: auto;"></a> 
+                    <a href=""><img src="./img/icon/twitter.svg" alt="twitter" style="width: 30px; height: auto;"></a> 
+                </td>
+            </tr>
+        </table>
+        <p class="pagetop"><a href="#"><img src="./img/icon/arrow.svg" style="width: 30px; rotate: -90deg;"></a></p>
+    </footer>
+</center></body>
+</html>

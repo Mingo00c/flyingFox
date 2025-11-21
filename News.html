@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣狐蝠保育網</title>
+    <meta name="description" content="台灣狐蝠保育網的成立團體">
+    <meta name="keywords" content="保育,團體,狐蝠,生態,教育">
+    <!-- icons -->
+    <link rel="icon" href="./logo6_Gemini.png">
+    <link rel="icon" sizes="192x192" href="./logo6_Gemini.png">
+    <link rel="apple-touch-icon" href="./logo6_Gemini.png">
+    <style>
+        body {
+            background: #F7F4EC;
+        }
+        .header{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: center top;
+            background-color: #fff;
+            z-index: 1;
+        }
+        .partOne {
+            width: 100%;
+            height: 603px;
+            background-image: url("img/news/banner.jpg");
+            background-repeat: no-repeat;
+            background-size: Cover;
+            opacity: 60%;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .container{
+            position: absolute;
+            top: auto;
+            left: 0;
+            text-align: left;
+            font-style: #fff;
+        }
+        h1 {
+            font-size: 300%;
+            line-height: 30px;
+            /* font-family: 'Limelight', cursive; */
+        }
+        .cloud{
+            width: 90%;
+            height: 90px;
+            background-color: #fff;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        .cloud ul{
+            width: 127px;
+            height: 44px;
+            background-color: #6B8EAE;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            text-align: center;
+            
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: auto;
+            padding-right: auto;
+            box-sizing: border-box;
+
+        }
+        table{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .sec1{
+            background-color:rgba(245,166,35,30%);
+        }
+        .card{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            padding-bottom: 30px;
+            background-color: #F5F1E4;
+            border: #F5A623 solid 3px;
+            border-radius: 15px;
+        }
+        .card3{
+            height: auto;
+            width: 30%;
+            margin: 5px;
+            padding: 15;
+            background-color: #F5A623;
+            border: #fff solid 3px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .card3 h5{
+            font-size: 24px;
+        }
+        tr td img{
+            width: 480px;
+            height: auto;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        h1 a{
+            text-decoration:none;
+            color: #fff;
+        }
+        h1 a:hover{
+            text-decoration:none
+        }
+        .nav ul {
+            margin-right: 10px; 
+        }
+        .header img{
+            width: 130px;
+         }
+         .entryBtns{
+            color: #F5A623 ;
+            text-align: center;
+            text-decoration:none
+         }
+         .sec3{
+            height: auto;
+            width: cover;
+            padding:10px;
+            margin:30px auto;
+            text-align: left;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec3 td{
+            height: 30%;
+            padding:10px;
+            margin:30px auto;
+            box-sizing: border-box;
+         }
+         .sec3 td tr{
+            width: 45%;
+         }
+         .sec2{
+            position: relative;
+            height: auto;
+            width: 90%;
+            padding:10px;
+            margin:15px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec2 img{
+            width: 450px;
+            height: auto;
+         }
+         .card3-1{
+            height: auto;
+            width: 480px;
+            margin: 5px;
+            padding: 15px;
+            background-color: rgba(76,116,93,30%);
+            border: #4C745D solid 3px;
+            border-radius: 15px;
+            text-align: left;
+            position: relative;
+            left: 0%;
+        }
+        .card3-2{
+            height: auto;
+            width: 480px;
+            margin: 5px;
+            padding: 15px;
+            background-color: rgba(107,142,174,30%);
+            border: #6B8EAE solid 3px;
+            border-radius: 15px;
+            text-align: left;
+            position: relative;
+            left: 0%;
+        }
+        .sec4{
+            height: auto;
+            width: 75%;
+            padding:10px;
+            margin:9px ;
+            text-align: left;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+        .card3-3{
+            height: auto;
+            width: 480px;
+            margin: 5px;
+            padding: 15px;
+            background-color: rgba(245,166,35,30%);
+            border: #F5A623 solid 3px;
+            border-radius: 15px;
+            text-align: left;
+            position: relative;
+            top: 0px;
+            left: 10px;
+        }
+        .card3-4{
+            height: auto;
+            width: 480px;
+            margin: 5px;
+            padding: 15px;
+            text-align: left;
+            position: relative;
+            top: 30px;
+            left: 0px;
+        }
+         footer{
+            height: auto;
+            width: cover;
+            padding: 10%;
+            background-color: #6B8EAE;
+
+         }
+         /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        /*pagetop*/
+        .pagetop{
+        width: 45px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        bottom: 70px;
+        }
+        
+        .pagetop a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        /* text-decoration: none;
+        text-align: center;
+        font-size: 12px; */
+        }
+        #pagetop{
+            margin:0;
+            margin-left: 262px;
+            position:fixed;
+            left: 50%;
+            bottom: 42px;
+            }
+
+        #pagetop a{
+            display:inline-block;
+            padding:10px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            }
+        .sec5{
+            height: auto;
+            width: 75%;
+            padding:10px;
+            margin:9px ;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+         .sec5 h2{
+            width: 90%;
+         }
+        .card-list{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card5{
+            width: 30%;
+            height: auto;
+            margin: 10px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(245,166,35,30%);
+            border: #4C745D solid 3px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .card5 .text{
+            color: #6B8EAE;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            
+        }
+        .card5 img{
+            width: 90%;
+            height: auto;
+            display: block;
+            position: relative;
+            top: 90px;
+        }
+        .card5 p{
+            position: relative;
+            top: 75px;
+            color: #4C745D;
+            text-align: left;
+            margin: 18px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: cover;
+            height: auto;
+            box-sizing: border-box;
+            display: block;
+            flex-wrap: nowrap;
+        }
+        .info{
+            width: 300px;
+            height: auto;
+            margin: 30px ;
+            border: #6B8EAE solid 3px;
+            border-radius: 18px;
+            
+        }
+        .info .title{
+            background-color:rgba(255,255,255,30%);
+            
+        }
+        .info .title h3{
+            line-height: 1.8;
+            background-color: rgba(118, 152, 184, 30%);
+            border: #6B8EAE solid 3px;
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 30px;
+            margin: auto;
+            position: relative;
+            top: calc((10px + 1.5ex) * -1.2);
+        }
+        .info .card-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .info .card-list .card6{
+            width: 280px;
+            margin: 0 10px;
+        }
+        .info .card-list .card6 .txt{
+            margin: 9px;
+        }
+        .info .card-list .card6 .txt h4{
+            text-align: center;
+            margin-top: 0px;
+        }
+        .info .card-list .card6 .txt ul{
+            margin-left: 1em;
+        }
+        .info2{
+            width: 300px;
+            height: auto;
+            margin: 30px;
+            border: #F5A623 solid 3px;
+            border-radius: 18px;
+        }
+        .info2 .title{
+            background-color:rgba(255,255,255,30%);
+            
+        }
+        .info2 .title h3{
+            line-height: 1.8;
+            background-color: rgba(245, 166, 35, 30%) ;
+            border: #F5A623 solid 3px;
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 15px;
+            margin: auto;
+            position: relative;
+            top: calc((10px + 1.5ex) * -1.2);
+        }
+        .info2 .card-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .info2 .card-list .card6{
+            width: 280px;
+            margin: 0 10px;
+        }
+        .info2 .card-list .card6 .txt{
+            margin: 9px;
+        }
+        .info2 .card-list .card6 .txt h4{
+            text-align: center;
+            margin-top: 0px;
+        }
+        .info2 .card-list .card6 .txt ul{
+            margin-left: 1em;
+        }
+        .info3{
+            width: 300px;
+            height: auto;
+            margin: 30px;
+            border: #6AA74F solid 3px;
+            border-radius: 18px;
+        }
+        .info3 .title{
+            background-color:rgba(255,255,255,30%);
+            
+        }
+        .info3 .title h3{
+            line-height: 1.8;
+            background-color: rgba(146, 180, 160, 30%) ;
+            border: #6AA74F solid 3px;
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 15px;
+            margin: auto;
+            position: relative;
+            top: calc((10px + 1.5ex) * -1.2);
+        }
+        .info3 .card-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .info3 .card-list .card6{
+            width: 280px;
+            margin: 0 10px;
+        }
+        .info3 .card-list .card6 .txt{
+            margin: 9px;
+        }
+        .info3 .card-list .card6 .txt h4{
+            text-align: center;
+            margin-top: 0px;
+        }
+        .info3 .card-list .card6 .txt ul{
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body><center>
+    <nav class="header">
+        <ul><a href="index.html"><img src="./logo6.png"></a></ul>
+        <ul><a href="news.html">救傷小故事</a></ul>
+        <ul><a href="News.html">志工活動</a></ul>
+        <ul><a href="donate.html">歷史沿革</a></ul>
+        <ul><a href="rescue2.html">救傷包</a></ul>
+        <ul><a href="SUPPORT.html">店家捐款箱</a></ul>
+        <ul><input type="text" name="search" placeholder="全站搜索" required></ul>
+        <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+    </nav>
+    <section class="partOne">
+        <ul class="container">
+            <h1>最新消息</h1>
+            <p>News</p>
+        </ul>
+    </section>
+    <nav class="cloud">
+        <ul><a href="news.html">最新活動</a></ul>
+        <ul><a href="aboutUs.html">關於我們</a></ul>
+        <ul><a href="aboutAnimal.html">關於狐蝠</a></ul>
+        <ul><a href="rescue.html">如何救傷</a></ul>
+        <ul><a href="donate.html">徵信公開</a></ul>
+        <ul><a href="donate.html">我要捐款</a></ul>
+        <ul><a href="SUPPORT.html">支持/加入</a></ul>
+    </nav>
+    <section class="sec1">
+        <table>
+            <tr style="width: 100%;">
+                <td style="width: 30%;padding-left: 0%;">
+                    <h2>志工活動</h2>
+                    <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;">志工活動</button>
+                </td>
+                <td style="width: 30%;padding-left: 0%;"><p><strong>志工服務內容</strong></p>
+                    <p>協助院內例行動物照養、環境清潔、野外採集、野放追蹤調查、自動照相機檔案整理、運輸傷病動物、支援宣導活動、導覽解說、櫃台服務及其他行政庶務。<br>備註: 若您願意貢獻特殊專長，如攝影、影像製作、藝術創作、木工、建築設計等，歡迎您直接來信，與我們討論可能的合作方式！</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="sec3"><center>
+        <table>
+            <tr>
+                <td>
+                    <img src="./img/news/training.png" style="width: 480px; height: auto; border-radius: 30px;border: #fff solid 3px;">
+                </td>
+                <td>
+                    <div style="width: 480px; height: auto;">
+                        <dl>
+                            <h3>招募與培訓</h3>
+                            <h4>參加資格條件</h4>
+                            <dt>年滿十八歲，關心台灣生態環境，以居住桃竹苗者優先。</dt>
+                            <dt>具服務熱忱、勤勞不怕髒、表達能力佳者。</dt>
+                            <dt>能完整修習培訓課程，且完成服勤條件者。</dt>
+                            <dt>2026 年志工招募結果預於 2025年底公告，敬請期待！</dt>
+                        </dl>
+                        <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;">志工培訓活動</button>
+                    </div>
+                </td>
+            </tr>
+            </table>
+            <td>
+            <h2>培育計畫</h2>
+            <p>  狐蝠保育志工養成計畫旨在培育對台灣生態具備專業知識、學術素養與實踐能力的長期志工，讓每位參與者都能成為傳播狐蝠保育理念、引導公眾行動的關鍵人物。<br>  我們將培訓計畫分成三個階段與核心能力，以系統化、由淺入深的流程，確保每位志工都能在最適合的位置上發光發熱。</p>
+            <div class="sec2">
+                <img src="./img/news/training1.jpg" >
+                <div class="card3-2">
+                    <h4>🦅階段一：先備知識與專業倫理（基礎）</h4>
+                    <dl>
+                        <dt><b>相關知識: </b>深入了解台灣狐蝠的生物學特徵、棲地環境、族群現況及面臨的生存威脅。</dt>
+                        <dt><b>保育倫理與法規： </b>學習救傷通報、野放原則與環境教育相關法規，建立負責任的保育觀念。</dt>
+                        <dt><b>實務場域觀摩： </b>參與救援單位的清潔與準備工作，熟悉標準作業流程（SOP）。</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="card3-1">
+                    <h4>🦅階段二：溝通與推廣技巧（實做）</h4>
+                    <dt><b>公眾演說與表達訓練： </b>學習將複雜的科學數據轉化為通俗易懂的故事，掌握面對不同年齡層聽眾的溝通表達技巧。</dt>
+                    <dt><b>教育活動設計工作坊： </b>參與設計親子活動、校園講座或市集攤位等，學習活動規劃與執行。</dt>
+                    <dt><b>社群媒體與文案撰寫： </b>掌握數位時代的推廣工具，學習如何撰寫具備影響力的保育文案和資訊圖表。</dt>
+                </div>
+                <img src="./img/news/training2.png" >
+               
+    </center></section>
+    <section class="sec4">
+        <table>
+            <tbody>
+                <tr>
+                    <th rowspan="3"><img src="./img/news/training3.png" style="position: relative;left: 0px"></th>
+                    <th class="card3-3">
+                        <h4>🦅階段三：進階實踐與領導力（獨立）</h4>
+                        <dt><b>專案實踐：</b>在導師指導下，獨立帶領小型推廣活動、協助特定研究數據的採集與整理，或執行一項棲地巡護任務。</dt>
+                        <dt><b>領袖培訓與指導：</b>學習如何招募、訓練新進志工，成為組織的關鍵領導力量。</dt>
+                        <dt><b>成果發表與回饋： </b>定期舉辦分享會，讓志工交換經驗、持續學習，形成互助的保育社群。</dt>
+                        <dt>您的熱情是我們最大的力量！</dt>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="card3-4">
+                        <ul>
+                            <li><b>培訓費用：</b>免費 (含餐飲、住宿、保險、教材及結業證書)。</li>
+                            <li><b>報名方式：</b>請填寫線上報名表單。</li>
+                            <li><b>結業證明：</b>完成所有課程並通過評核者，將獲頒本協會結業證書。</li>
+                            <li>我們期待您的加入，一同為台灣狐蝠的未來而努力！</li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th><button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;position: relative;left: 200px;">報名計畫</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="sec5">
+        
+        <h2>保育專欄</h2>
+        <div class="card-list">
+            <div class="card5">
+                <div class="text"><h3>用心溫暖，用專業照亮一線生機</h3></div>
+                <div class="pic"><img src="./img/news/column1.jpg"></div><br>
+                <p>  牠們嬌小的身軀蜷縮在我們的手心，體重僅有幾十公克...因失親、落巢而被送來的蝠寶。在東部救援中心，我們沒有任何教科書可以依循。從日本專家的遠端諮詢，到獸醫師夜以繼日的配方奶調整，為牠們建立起全台首例人工照養流程。
+                <br>  然而，照養成功不代表終點，野放後的挑戰更為嚴峻...<br>2024.10.12</p>
+                <br>
+                <p><div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                <br>
+            </div>
+            <div class="card5">
+                <div class="text"><h3>疫區的陰影：當恐懼蔓延，狐蝠成了代罪羔羊</h3></div>
+                <div class="pic"><img src="./img/news/column2.jpg"></div><br>
+                <p>  蝙蝠並不帶有新冠病毒（SARS-CoV-2），並不傳播新冠肺炎。防止疫情擴散首要之道是遵從世界衛生組織（世衛）等全球衛生組織的指引...<br>  面對人類的恐懼與誤解，蝙蝠成了無辜的代罪羔羊。這段經歷提醒我們，保育工作必須同步處理科學事實、社會心理，以及平等的生命權。<br>2023.10.25</p>
+                <br>
+                <p><div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                <br>
+            </div>
+            <div class="card5">
+                <div class="text"><h3>夜行性果園：台灣狐蝠棲地現況</h3></div>
+                <div class="pic"><img src="./img/news/column3.jpg"></div><br>
+                <p>  台灣狐蝠被稱為「空中精靈」，牠們夜間出沒，安靜地在城市邊緣與偏鄉的果樹林間穿梭。<br>  狐蝠需要的不僅是食物，更是安全的日夜住所。本專欄將透過長期監測數據，帶您了解哪些關鍵的樹種是牠們的生命線，並呼籲大眾關注棲地保存...<br>2022.11.08</p>
+                <br>
+                <p><div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                <br>
+            </div>
+        </div>
+        <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;">保育專欄</button>
+    </section>
+    <section class="sec6">
+        
+        <h2>救傷小故事</h2>
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    <div class="info">
+                        <div class="title">
+                            <h3 style="text-align: center;">兒童營隊<br>我是夜間的守護者</h3>
+                            <div class="card-list">
+                                <div class="card6">
+                                <div class="txt">
+                                    <ul class="list">
+                                    <p>透過趣味互動、實地觀察與角色扮演，引導孩子們認識台灣狐蝠的生態習性，學習如何保護牠們的棲地，並培養對野生動物的愛護與責任感<div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="info2">
+                        <div class="title">
+                            <h3 style="text-align: center;">果園內的意外訪客</h3>
+                            <div class="card-list">
+                                <div class="card6">
+                                <div class="txt">
+                                    <ul class="list">
+                                    <p>南投某處果園，一隻狐蝠幼崽誤觸捕獸網，翅膀被纏繞受傷。...經此一事後，我們積極推廣友善農業，鼓勵農民改用無傷害性的驅鳥方式，以避免憾事發生<div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="info3">
+                        <div class="title">
+                            <h3 style="text-align: center;">陸上驚魂記</h3>
+                            <div class="card-list">
+                                <div class="card6">
+                                <div class="txt">
+                                    <ul class="list">
+                                    <p>圓仔，一隻曾因颱風而從樹上墜落的幼蝠，牠的故事，不只是一隻狐蝠的重生，更重要的是，如何一點一滴地重建對人類的信任。<div style=" position: relative;text-align: right;bottom: 0px;"><a href="">more...</a></div></p>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p style="text-align: end;margin-right: 30px;">
+        <img src="./img/icon/arrow.svg" style="width: 30px; height: auto;rotate: -180deg;">
+        <img src="./img/icon/arrow.svg" style="width: 30px; height: auto;">
+        </p>
+        <button style="color:#6B8EAE;text-align: center ;border: #fff solid 3px;width: 154px;height: 60px;border-radius: 15px;font-size: 20px;opacity: 100%;">救傷故事</button>
+    </section>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>聯絡資訊</strong><br>服務時間: 09:00-18:00星期一~星期六<br>洽詢專線: 0905-139278<br>客服信箱: FormosanFlyingFox@taiwan.org</p>
+                    <img src="./logo6.png" alt="logo" style="width: 240px; height: auto;">
+                </td>
+                <td>
+                    <p><strong>社團法人臺灣狐蝠保育協會</strong><br>立案字號: 台内團字第10900167953號函<br>勸募許可文號: 衛部救字第1130376489號函<br>統一編號: 71137640<br>發票愛心碼: 9457</p>
+                    <p>訂閱電子報</p>
+                    <ul><input type="text" name="email" placeholder="電子郵件*" required></ul>
+                    <ul><div class="entryBtns"><input type="submit" value="送出"></div></ul>
+                    <p><strong>Formosan Flying Fox Conservation</strong></p>
+                </td>
+                <td>
+                    <video muted playsinline controls width="240" height="auto">
+                        <source src="./index.mp4" type="video/webm" />
+                    </video>
+                    <p><strong>瀏覽次數:  </strong></p><br>
+                    <a href=""><img src="./img/icon/envelope.svg" alt="envelope" style="width: 33px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/facebook.svg" alt="facebook" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/instagram.svg" alt="instagram" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/linkedin.svg" alt="linkedin" style="width: 30px; height: auto;"></a>      
+                    <a href=""><img src="./img/icon/phone-call.svg" alt="phone-call" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/play.svg" alt="play" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/threads.svg" alt="threads" style="width: 30px; height: auto;"></a>
+                    <a href=""><img src="./img/icon/tik-tok.svg" alt="tik-tok" style="width: 30px; height: auto;"></a> 
+                    <a href=""><img src="./img/icon/twitter.svg" alt="twitter" style="width: 30px; height: auto;"></a> 
+                </td>
+            </tr>
+        </table>
+        <p class="pagetop"><a href="#"><img src="./img/icon/arrow.svg" style="width: 30px; rotate: -90deg;"></a></p>
+    </footer>
+</center></body>
+</html>

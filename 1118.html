@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+
+<title>台灣狐蝠保育網</title>
+<meta name="description" content="台灣狐蝠保育網的成立團體">
+<meta name="keywords" content="保育,團體,狐蝠,生態,教育">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!-- icons -->
+<link rel="icon" href="./logo6.png">
+<link rel="icon" sizes="192x192" href="./logo6.png">
+<link rel="apple-touch-icon" href="./logo6.png">
+
+<style>
+    .wrap {
+    overflow: hidden; /*隱藏超出的部份*/
+    background: #fff;
+  }
+  .bg {
+    margin-top: -5%;
+    padding: 8% 30px 4%;
+    background: #fff;
+    text-align: justify;
+  }
+        /*grid*/
+    @media screen and (min-width: 768px) {
+    /*通用2欄,3欄指定*/
+    .pc-grid-col2,
+    .pc-grid-col3 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    /*2欄的欄寬*/
+    .pc-grid-col2 .col {
+        width: 48.9361%;
+    }
+    /*3欄的欄寬*/
+    .pc-grid-col3 .col {
+        width: 31.9148%;
+    }
+    }
+    /*global navigation
+--------------------*/
+.gnav {
+  background: #fff;
+}
+.gnav ul {
+  display: flex;
+}
+.gnav li {
+  width: 25%;
+}
+.gnav a {
+  display: block;
+  padding: 15px 0;
+  color: #6B8EAE;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+}
+.gnav a:hover {
+  background: #F5A623;
+}
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card-list{
+            width: 960px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .card2{
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 9%;
+            position: relative;
+            overflow: hidden;
+            background-color: #F5A623;
+        }
+        .card2 btn{
+            width: 130px;
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .card .text{
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: -90px;
+            left: 0;
+            right: 0px;
+            transition: .6s;
+        }
+        .card:hover .text{
+            bottom: 0;
+        }
+  .btn {
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  border: #fff;
+  background-color: #6B8EAE;
+  border-radius: 30px;
+}
+    .btn p a{
+    margin-top: 15px;
+    color: #fff;
+    }
+    .btn p a:hover {
+  color: #000000;
+}
+/*staff
+--------------------*/
+#staff {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.staff-photo {
+  width: 360px;
+  margin: 0 auto 20px;
+}
+.staff-heading{
+  display: block;
+  padding: 8px 10px;
+  margin: 0 auto 10px;
+  border-radius: 2em;
+  background: #d8c7a0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+/*Google Audio
+--------------------*/
+.Audio {
+  position: relative;
+  /* padding-top: 50%;  */
+}
+.Audio iframe {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+/*footer
+--------------------*/
+.footer{
+  padding: 20px 0;
+  background: #6B8EAE;
+}
+.footer-info-title {
+  margin-bottom: 20px;
+}
+.footer-info-ph img{
+  box-sizing: border-box;
+}
+.footer-info-list{
+  margin-bottom: 20px;
+}
+.footer-info-list dt{
+  clear: left;
+  float: left;
+  width: 7em;
+  margin-bottom: 10px;
+}
+.footer-info-list dd{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-info-ph {
+    width: 31.9148%;
+  }
+  .footer-info-data {
+    width: 65.9574%;
+  }
+}
+.list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        [class^="item"]{
+            width: 45px;
+            height: 15px;
+            margin: 2px;
+            color:#fff;
+        }
+</style>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="aboutUs_style.css" media="all">
+
+</head>
+<body>
+  <nav id="gnav" class="gnav">
+  <ul class="container">
+    <li><a href="news.html">救傷小故事</a></li>
+    <li><a href="SUPPORT.html">志工活動</a></li>
+    <li><a href="donate.html">歷史沿革</a></li>
+    <li><a href="news.html">其他救傷</a></li>
+    <li><a href="SUPPORT.html">店家捐款箱</a></li>
+    <li><a href="SUPPORT.html">支持/加入</a></li>
+    <li><input type="text" name="name" placeholder="全站搜索" required></li>
+    <li class="btn"><p><a href="">送出</a></p></li>
+  </ul>
+</nav><!-- /#gnav -->
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-title">
+    <h1 class="header-logo"><a href="img/aboutUs/banner.png"><img src=" alt="台灣狐蝠保育網"></a></h1>
+    <p class="header-msg">人本自然 平衡生態</p>
+    </div>
+  </div>
+</header><!-- /#header -->
+
+<main id="contents" class="contents">
+  <div class="container">
+
+  <section id="menu" class="section">
+    <ul class="pc-grid-col3 menu-list">
+      <li class="col">
+        <img src="img/aboutUs/aboutUs.jpg" alt="aboutUs">
+      </li>
+      <li class="col">
+        <img src="img/aboutUs/aboutAnimal.jpg" alt="aboutCase">
+      </li>
+      <li class="col">
+        <img src="img/aboutUs/abouFlyingFox.jpg" alt="abouFlyingFox">
+      </li>
+    </ul>
+  </section>
+  <!-- /#card -->
+   <div class="card-list">
+        <div class="card">
+            <p>我們是研究者、獸醫、教育工作者與生態志工，看見了這份生態上的急迫性與缺口，於是共同成立保育平台。</p>
+        </div>
+        <div class="card">
+            <p>台灣狐蝠作為台灣生物圈中不可或缺的一份子，應與環境、人類 三者健康為一體。</p>
+        </div>
+        <div class="card">
+            <p>肩負著在熱帶森林播種的重任。然而，隨著⼈為破壞與氣候變遷的衝擊，牠們早已成為瀕臨滅絕的物種，正發出無聲的求救訊號。</p>
+        </div>
+    </div>
+    <div class="card-list">
+        <div class="card2">
+            <div class="text"><h3>動保,不是一個人做很多, 是每個人都做了一點</h3></div>
+            <p>我們堅信野生動物保育不只是特定組織的責任，而是需要參與者共同實踐。</p>
+            <div class="btn"><p><a href="">緣起</a></p></div>
+        </div>
+        <div class="card2">
+            <div class="text"><h3>從蝠寶開始的族群永續</h3></div>
+            <p>我們期望透過科學實證的救傷和野放方法、透明公開的研究數據以及全民參與的教育推廣，成為台灣狐蝠保育工作的主要平台。</p>
+            <div class="btn"><p><a href="">理念</a></p></div>
+        </div>
+        <div class="card2">
+            <div class="text"><h3>守護台灣空中的神秘精靈</h3></div>
+            <p>我們的目標是確保台灣狐蝠能在健康的環境中永續生存，並以「研究、救援、教育、推廣」四個面向為核心，打造資訊與行動整合平台，致力於傳遞狐蝠的存續權與生態價值給台灣。</p>
+            <div class="btn"><p><a href="">願景</a></p></div>
+        </div>
+    </div>
+<hr>
+<center><h3 color="#F5A623">Formosan Flying Fox<br>Pteropus dasymallus formosus</h3></center>
+  <div class="pc-grid-col2">
+    <section id="staff" class="col section">
+      <div class="staff-photo"><img src="./img/aboutUs/detail.jpg" alt="工作照"></div>
+    </section><!-- /#staff -->
+    <section id="info" class="col section">
+      <p class="staff-text">        依據「財團法人法」第 25 條規定，除捐贈者事先已書面表示反對外，本機構須主動公開捐贈者之姓名及捐款金額，為因應其規範，倘若您不希望公開捐款資訊，敬請下載公開資訊意願聲明書，填妥後拍照、掃描、傳真等各種方式回傳本會信箱：FormosanFlyingFox@taiwan.org；若您未主動回覆，將視為同意公開個人捐款資訊以利徵信。<br>* 若您同時以數個名義捐款，須請填具個別聲明書<br>* 接受捐贈或支付清冊資料</p>
+      <div class="btn"><p><a href="donate.html">我要捐款</a></p></div>
+    </section><!-- /#info -->
+  </div><!-- /.grid -->
+<hr>
+  <section id="access" class="section">
+    <div class="Audio">
+        <img src="./img/aboutUs/Project.png">
+    </div><!-- /.Audio -->
+    <ul class="pc-grid-col3 banner-list">
+        <li class="col"><div class="btn"></div></li>
+      <li class="col"><div class="btn"><p><a href="donate.html">會務徵信</a></p></div></li>
+      <li class="col"><div class="btn"></div></li>
+    </ul>
+      <iframe src="./index.mp4" width=100% height=360 frameborder="0" margin-top=12 style="border:0" allowfullscreen></iframe>
+  </section><!-- /#intro -->
+  </div><!-- /.container -->
+</main><!-- /#main -->
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <section class="footer-info">
+      <div class="footer-info-ph"><img src="./logo6.png" alt="logo"></div>
+      <div class="footer-info-data">
+        <dl class="footer-info-list">
+          <dt><strong>聯絡資訊</strong></dt>
+          <dd>服務時間: 09:00-18:00星期一~星期六<br>
+            洽詢專線: 0905-139278<br>
+            客服信箱: FormosanFlyingFox@taiwan.org
+        </dd>
+          <dt><strong>社團法人臺灣狐蝠保育協會</strong></dt>
+          <dd>立案字號: 台内團字第10900167953號函<br>勸募許可文號: 衛部救字第1130376489號函<br>統一編號: 71137640<br>發票愛心碼: 9457</dd>
+        </dl>
+      </div>
+      <div><video autoplay loop="" controls width="250">
+                <sorce src="/shared-assets/videos/flower.webm" type="video/webm" />
+            </video></div>
+    </section>
+    <div class="list">
+        <div class="item1"><img src="./img/icon/envelope.svg"></div>
+        <div class="item2"><img src="./img/icon/facebook.svg"></div>
+        <div class="item3"><img src="./img/icon/instagram.svg"></div>
+        <div class="item4"><img src="./img/icon/linkedin.svg" ></div>
+        <div class="item5"><img src="./img/icon/phone-call.svg"></div>
+        <div class="item6"><img src="./img/icon/play.svg"></div>
+        <div class="item7"><img src="./img/icon/threads.svg" ></div>
+        <div class="item8"><img src="./img/icon/tik-tok.svg"></div>
+        <div class="item9"><img src="./img/icon/twitter.svg"></div>
+
+
+
+    </div>
+    <p class="copyright"><small>Copyrights (c) Cafe Leaf All Rights Reserved.</small></p>
+    <p class="pagetop"><a href="#header">TOP</a></p>
+  </div><!-- /.container -->
+</footer><!-- /#footer -->
+</body>
+</html>
